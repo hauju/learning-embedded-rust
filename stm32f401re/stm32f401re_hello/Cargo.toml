@@ -1,0 +1,19 @@
+[package]
+name = "stm32f401re_hello"
+version = "0.1.0"
+authors = ["hauju <hauke.jung@outlook.de>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cortex-m = "0.7.1"
+panic-halt = "0.2.0"
+cortex-m-rt = "0.6.13"
+rtt-target = { version = "0.3.0", features = ["cortex-m"]}
+
+[profile.dev]
+debug = 1 # default is `true`; not needed if not already overridden
+
+[profile.release]
+debug = 1 # default is `false`; using `true` is also OK

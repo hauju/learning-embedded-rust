@@ -1,0 +1,7 @@
+[default.general]
+chip = "STM32L4S5VITx"
+
+[default.rtt]
+# Whether or not an RTTUI should be opened after flashing.
+# This is exclusive and cannot be used with GDB at the moment.
+enabled = true
